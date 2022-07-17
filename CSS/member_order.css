@@ -1,0 +1,72 @@
+@import url("reset.css");
+
+.member_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/member_top_bg.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.member_main{
+    width: 1000px;
+    margin: 150px auto 150px;
+}
+
+.info_order_wrapper{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.info_order_wrapper .personalinfo{
+    background-color: #666666;
+    color: white;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    font-size: 28px;
+    border: 0;
+}
+
+.info_order_wrapper .order{
+    background-color: #be9c79;
+    color: white;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    font-size: 28px;
+    border: 0;
+}
+
+table{
+    width: 1000px;
+    margin: 60px auto 0;
+}
+
+thead tr th{
+    width: 270px;
+    font-weight: bold;
+    border-bottom: 1px solid #666666;
+}
+
+tbody tr th{
+    height: 50px;
+}
+
+input{
+    width: 70px;
+    height: 40px;
+    background-color: #be9c79;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;
+}

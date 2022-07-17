@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+.cart_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/cart_top_bg.png");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.cart_main{
+    width: 1200px;
+    margin: 100px auto 100px;
+}
+
+table {
+    table-layout: fixed;
+    word-break: break-all;
+} 
+
+thead tr .product-name{
+    width: 300px;
+    height: 50px;
+}
+
+thead tr .product-price{
+    width: 300px;
+}
+
+thead tr .product-quantity{
+    width: 300px;
+}
+
+thead tr .product-total{
+    width: 300px;
+}
+
+thead{
+    border-bottom: 1px solid #666666;
+}
+
+tbody .product-thumbnail{
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+tbody .product-thumbnail img{
+    width: 80px;
+}
+
+tbody .product-remove{
+    vertical-align: middle;
+}
+
+tbody .product-remove a{
+    color: black;
+    text-decoration: none;
+}
+
+tbody .product-name{
+    vertical-align: middle;
+    text-align: center;
+    height: 120px;
+}
+
+tbody .product-name a{
+    color: black;
+    text-decoration: none;
+}
+
+tbody .product-price{
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody .product-quantity{
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody .product-total{
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody{
+    border-bottom: 1px solid #666666;
+}
+
+thead .carttotals_suntotal{
+    width: 300px;
+}
+
+thead .carttotals_price{
+    width: 300px;
+}
+
+.carttotals{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 100px auto 30px;
+}
+
+.bottom_tr{
+    border-bottom: 1px solid #666666;
+}
+
+.bottom_tr th{
+    height: 100px;
+    vertical-align: middle;
+}
+
+tr .carttotals_suntotal, .carttotals_shipping, .carttotals_total{
+    text-align-last: left;
+}
+
+tr .carttotals_price{
+    width: 900px;
+    text-align: left;
+}
+
+table + input{
+    width: 200px;
+    height: 60px;
+    background-color: #be9c79;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-size: 14px;
+}

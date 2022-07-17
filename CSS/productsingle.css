@@ -1,0 +1,148 @@
+@import url("../CSS/reset.css");
+
+.productsingle_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/cart_top_bg.png");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.productsingle_main{
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.productsingle_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsingle_left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productsingle_left .bigpic{
+    width: 520px;
+}
+
+.productsingle_left .detailpic{
+    width: 190px;
+}
+
+.productsingle_right{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.product_name{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product_price{
+    margin-bottom: 30px;
+}
+
+.quanity_addcart_wrapper{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.eltdf-quantity-buttons{
+    position: relative;
+    display: inline-block;
+}
+
+
+.addcart input{
+    width: 190px;
+    height: 40px;
+    background-color: #be9c79;
+    color: white;
+    border: none;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.description_addinfo_wrapper ul{
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+
+.description_addinfo_wrapper li{
+    font-size: 14px;
+    background-color: #be9c79;
+    line-height: 50px;
+    margin-top: 20px;
+    flex:1;
+    text-align: center;
+    border-right: 1px solid #666666;
+}
+
+.description_addinfo_wrapper li:last-child{
+    border: 0;
+}
+
+.description_addinfo_wrapper a{
+    color: white;
+    text-decoration: none;
+}
+
+.product_comment{
+    border: 1px solid #666666;
+    height: 200px;
+}
+
+.product_comment p{
+    font-size: 12px;
+    padding: 20px 20px;
+}
+
+.productsingle_bottom{
+    margin: 100px 0 100px;
+}
+
+.productsingle_bottom h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.productsingle_bottom ul{
+    display: flex;
+    justify-content: center;
+}
+
+.productsingle_bottom p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.productsingle_bottom img{
+    width: 200px;
+}
+
+.quantity-buttons input{
+    line-height: 50px;
+    text-align: center;
+}
+
+.icon_plus{
+    margin-right: 5px;
+}
+
+.icon_minus{
+    margin-left: 5px;
+}

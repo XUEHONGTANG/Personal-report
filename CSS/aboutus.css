@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+.aboutus_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/aboutus_top_bg.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.aboutus_main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutus_main p{
+    margin-top: 30px;
+}
+
+.aboutus_main h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about_us_content{
+    display: flex;
+    margin: 100px 0 100px;
+}
+
+.about_us_content_left{
+    flex:1
+}
+
+.about_us_content_left img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about_us_content_left p{
+    margin: 30px auto 0;
+    width: 90%;
+}
+
+.about_us_content_right{
+    flex:1
+}
+
+.about_us_content_right img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about_us_content_right p{
+    margin: 30px auto 0;
+    width: 90%;
+
+}

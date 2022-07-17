@@ -1,0 +1,151 @@
+@import url("reset.css");
+
+.member_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/member_top_bg.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.member_main{
+    width: 1200px;
+    margin: 150px auto 150px;
+}
+
+.ordertotal{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+thead{
+    border-bottom: 1px solid #666666;
+}
+
+tbody{
+    border-bottom: 1px solid #666666;
+}
+
+thead tr th{
+    width: 290px;
+}
+
+tbody img{
+    width: 80px;
+    margin: 0 auto;
+}
+
+tbody .product_remove, .product-thumbnail, .product-name, .product-price, .product-quantity, .product-total{
+    vertical-align: middle;
+}
+
+tbody td{
+    text-align: center;
+}
+
+.product-remove a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    line-height: 80.5px;
+}
+
+.product-name a{
+    display: block;
+    color:black;
+    text-decoration: none;
+}
+
+.bottom_wrap{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #666666;
+    width: 400px;
+    margin-left: auto;
+}
+
+.subtotal, .shipping, .total{
+    margin-right: 100px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.suntotal_price, .shipping_price, .total_price{
+    margin-right: 100px;
+    padding-top: 20px;
+}
+
+.addcart{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+
+input{
+    background-color: #be9c79;
+    color: white;
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+.orderdetail_wrapper{
+    width: 1000px;
+    margin: 50px auto 0;
+}
+
+.orderdetail_top{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.orderdetail_top_left{
+    flex: 2;
+}
+
+.orderdetail_top_right{
+    flex: 1;
+}
+
+.orderdetail_bottom_left{
+    flex: 2;
+}
+
+.orderdetail_bottom_right{
+    flex: 1;
+}
+
+
+.orderdetail_bottom{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 50px;
+}
+
+.left_td{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.right_td{
+    text-align: right;
+}
+
+.orderdetail_top_right .right_td{
+    width: 160px;
+}
+
+
+

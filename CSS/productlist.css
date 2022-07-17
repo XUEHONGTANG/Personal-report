@@ -1,0 +1,151 @@
+@import url("reset.css");
+
+.product_list_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/productlist_top_bg.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+.product_list_content{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product_list_left{
+    flex:1;
+    margin-top: 50px;
+}
+
+.product_categories a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.product_categories li{
+    margin-bottom: 20px;
+}
+
+.product_top_rated{
+    margin-top: 70px;
+}
+
+.product_top_rated ul{
+    width: 200px;
+}
+
+.product_top_rated_li{
+    width: 150px;
+    display: flex;
+}
+
+.product_top_rated_content{
+    margin: auto 0;
+}
+
+.product_top_rated_li img{
+    width: 100px;
+}
+
+.product_top_rated_li a{
+    display: block;
+    font-size: 12px;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+}
+
+.product_top_rated_li p{
+    font-size: 12px;
+}
+
+.product_list_right{
+    flex: 3;
+}
+
+.product_seller{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.product_seller:last-child{
+    margin-bottom: 150px;
+}
+
+.selectionwrap{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.product_seller_pic{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.product_seller_pic:hover .product_seller_pic_outer{
+    opacity: 1;
+}
+
+.product_name{
+    text-align: center;
+    font-size: 14px;
+}
+
+.product_price{
+    text-align: center;
+    font-size: 14px;
+}
+
+.product_seller_pic_outer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.4);
+    transition: opacity .7s ease;
+}
+
+.product_seller_pic_inner a{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 42%;
+    left: 0;
+    color: white;
+    background-color: #ecb788;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.product_seller_pic_inner a:hover{
+    background-color: black;
+}
+
+.product_name a{
+    color: black;
+    text-decoration: none;
+}

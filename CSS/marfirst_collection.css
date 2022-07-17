@@ -1,0 +1,39 @@
+@import url("reset.css");
+
+.marfirst_collection_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/marfirst_collection_top_bg.png");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.marfirst_collection_main{
+    width: 1200px;
+    margin: 150px auto 150px;
+}
+
+.collection_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.collection_box img{
+    width: 100%;
+}
+
+.collection_box p{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}

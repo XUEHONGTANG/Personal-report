@@ -1,0 +1,63 @@
+@import url("reset.css");
+
+.aboutus_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/member_top_bg.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.member_login_main{
+    width: 1200px;
+    margin: 100px auto 100px;
+}
+
+.member_login_main h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.member_login_main input{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 50px;
+}
+
+.content_wrapper{
+    display: flex;
+    width: 500px;
+    margin: -30px auto 0;
+}
+
+.content_wrapper a{
+    color: black;
+    text-decoration: none;
+}
+
+.content_wrapper a:last-child{
+    margin-left: 20px;
+}
+
+.account, .password, .login{
+    width: 500px;
+    margin: 0 auto 30px;
+}
+
+.login input{
+    width: 508px;
+    height: 60px;
+    background-color: #be9c79;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}

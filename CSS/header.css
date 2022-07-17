@@ -1,0 +1,134 @@
+body{
+    font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.1);
+
+}
+
+.logo{
+    width: 5%;
+    margin-top: 20px;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 480px;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav li a{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-item{
+    width: 80px;
+    position: relative;
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1.8px;
+    background-color: white;
+    position: absolute;
+    bottom: -0.05em;
+    transition: width .4s ease-in;
+}
+
+.nav-item:hover.nav-item::after{
+    width: 100%;
+}
+
+.nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 3px 5px #333;
+    transition: color .4s ease-in;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav a:hover{
+    color: tomato;
+}
+
+.nav-item:hover .second_nav{
+    display: block;
+}
+
+.second_nav{
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+.second_nav ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.second_nav ul li{
+    width: 200px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.8);
+}
+
+.second_nav a{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 4em;
+}
+
+.top-icon{
+    display: flex;
+}
+
+.top-icon ul{
+    margin-left: 30px;
+}
+
+.top-icon li{
+    margin-left: 20px;
+}
+
+.top-icon a{
+    color: white;
+}
+
+.top-icon a:hover{
+    color: tomato;
+}
+

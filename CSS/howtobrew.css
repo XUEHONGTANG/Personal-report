@@ -1,0 +1,67 @@
+@import url("reset.css");
+
+.howtobrew_top_bg{
+    display: flex;
+    height: 400px;
+    background-image: url("../img/howtobrew_top_bg.png");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+
+.howtobrew_main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.videobox{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bottombox1, .bottombox2, .bottombox3, .bottombox4{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bottombox1{
+    margin-top: 100px;
+}
+
+.bottombox1_left, .bottombox1_right, .bottombox2_left, .bottombox2_right, .bottombox3_left, .bottombox3_right, .bottombox4_left, .bottombox4_right{
+    width: 100%;
+}
+
+
+.howtobrew_main img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.howtobrew_main p{
+    width: 50%;
+    margin: 100px auto 0;
+}
+
+.bottombox4_right img{
+    margin-bottom: 100px;
+}
+
+
