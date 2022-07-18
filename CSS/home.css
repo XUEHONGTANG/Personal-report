@@ -8,6 +8,7 @@
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+    background-position: 0 center;
 }
 
 .top-slogan{
