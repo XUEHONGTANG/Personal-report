@@ -23,6 +23,10 @@ h1{
     line-height: 1;
 }
 
+h2{
+    text-align: center;
+}
+
 span{
     font-weight: bold;
     color: #C7B299;
@@ -45,7 +49,7 @@ span{
 
 .visitourcafe_content{
     width: 50%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 
@@ -94,7 +98,7 @@ span{
 
 .buythebean_content{
     width: 50%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 
@@ -143,7 +147,7 @@ span{
 
 .learntobrew_content{
     width: 50%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 

@@ -92,6 +92,10 @@ h1{
 }
 
 .description_addinfo_wrapper li:last-child{
+    background-color: #666666;
+}
+
+.description_addinfo_wrapper li:last-child{
     border: 0;
 }
 

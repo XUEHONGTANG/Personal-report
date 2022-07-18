@@ -28,6 +28,7 @@ h1{
 
 .collection_box img{
     width: 100%;
+    flex: 1;
 }
 
 .collection_box p{
@@ -36,4 +37,8 @@ h1{
     height: 100%;
     margin: 0 auto;
     align-items: center;
+}
+
+.box_content{
+    flex: 1;
 }
