@@ -17,7 +17,7 @@ h1{
 
 .marfirst_collection_main{
     width: 1200px;
-    margin: 150px auto 150px;
+    margin: 100px auto 100px;
 }
 
 .collection_box{
@@ -40,5 +40,5 @@ h1{
 }
 
 .box_content{
-    flex: 1;
+    flex: 2;
 }

@@ -24,7 +24,7 @@ h3{
 .product_list_content{
     display: flex;
     width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto 100px;
 }
 
 .product_list_left{

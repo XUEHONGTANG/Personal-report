@@ -17,7 +17,7 @@ h1{
 
 .member_main{
     width: 1200px;
-    margin: 150px auto 150px;
+    margin: 100px auto 100px;
 }
 
 .ordertotal{
@@ -94,7 +94,7 @@ tbody td{
 input{
     background-color: #be9c79;
     color: white;
-    width: 10%;
+    width: 190px;
     height: 50px;
     text-align: center;
     font-weight: bold;
@@ -130,7 +130,6 @@ input{
 
 .orderdetail_bottom{
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 50px;
 }
 
@@ -144,8 +143,18 @@ input{
 }
 
 .orderdetail_top_right .right_td{
-    width: 160px;
+    width: 180px;
 }
 
+.orderdetail tbody{
+    border: 0;
+}
 
+.orderdetail .order_title{
+    font-weight: bold;
+}
+
+.orderdetail thead{
+    font-weight: bold;
+}
 
