@@ -17,7 +17,7 @@ h1{
 
 .cart_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 table {
@@ -134,4 +134,10 @@ table + input{
     border: none;
     margin-top: 30px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
 }

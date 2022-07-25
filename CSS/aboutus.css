@@ -17,7 +17,7 @@ h1{
 
 .aboutus_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .aboutus_main p{
@@ -40,8 +40,10 @@ h1{
 }
 
 .about_us_content_left img{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    padding-right: 30px;
+
 }
 
 .about_us_content_left p{
@@ -54,12 +56,28 @@ h1{
 }
 
 .about_us_content_right img{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    padding-left: 30px;
 }
 
 .about_us_content_right p{
     margin: 30px auto 0;
     width: 90%;
+
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
+    
+    .aboutus_main{
+        max-width: 413px;
+    }
+
+    .about_us_content_right img{
+        padding: 0;
+    }
 
 }

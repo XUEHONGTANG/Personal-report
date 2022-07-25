@@ -17,7 +17,7 @@ h1{
 
 .marfirst_collection_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .collection_box{
@@ -26,9 +26,12 @@ h1{
     margin-bottom: 70px;
 }
 
+.collection_box .pic{
+    flex: 1;
+}
+
 .collection_box img{
     width: 100%;
-    flex: 1;
 }
 
 .collection_box p{
@@ -41,4 +44,18 @@ h1{
 
 .box_content{
     flex: 2;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
+
+    .marfirst_collection_main{
+        max-width: 414px;
+    }
+
+    .collection_box .pic{
+        padding-left: 60px;
+    }
 }

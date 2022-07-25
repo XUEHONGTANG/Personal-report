@@ -17,7 +17,7 @@ h1{
 
 .member_login_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .member_login_main h2{
@@ -60,4 +60,10 @@ h1{
     color: white;
     border: none;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
 }

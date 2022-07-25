@@ -17,7 +17,7 @@ h1{
 
 .member_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .ordertotal{
@@ -156,5 +156,11 @@ input{
 
 .orderdetail thead{
     font-weight: bold;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
 }
 

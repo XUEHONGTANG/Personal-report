@@ -17,7 +17,7 @@ h1{
 
 .member_joinus_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .member_joinus_main h2{
@@ -46,4 +46,10 @@ h1{
     border: none;
     margin-top: 30px;
     padding: 0;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
 }

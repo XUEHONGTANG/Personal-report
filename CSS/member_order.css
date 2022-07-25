@@ -17,7 +17,7 @@ h1{
 
 .member_main{
     width: 1000px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .info_order_wrapper{
@@ -69,4 +69,10 @@ input{
     border: none;
     margin-top: 30px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+    }
 }

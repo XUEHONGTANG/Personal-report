@@ -1,14 +1,13 @@
 @import url("reset.css");
 
 .home_top_bg{
-    background-image: url(../img/home_top_bg.jpg);
     width: 100%;
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
     position: relative;
-    background-position: 0 center;
+}
+
+.home_top_bg img{
+    width: 100%;
+    display: block;
 }
 
 .top-slogan{
@@ -33,19 +32,18 @@ span{
     color: #BE9C79;
 }
 
-.visitourcafe{
+.home_content{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .visitourcafe-img{
-    display: block;
-    width: 50%;
-    height: 600px;
-    background-image: url(../img/home_visitourcoffee.png);
+    background-image: url("../img/home_visitourcoffee.png");
     background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
 }
 
 .visitourcafe_content{
@@ -61,7 +59,7 @@ span{
 }
 
 
-.visitourcafe_content P{
+.visitourcafe_content p{
     margin-bottom: 55px;
     padding: 0 70px;
     line-height: 2.5em;
@@ -74,26 +72,14 @@ span{
     text-decoration: none;
     color: white;
     width: 190px;
-    height: 50px;
     line-height: 50px;
     margin: 0 auto;
     font-size: 14px;
     font-weight: bold;
 }
 
-.buythebean{
-    display: flex;
-    width: 100%;
-}
-
-.buythebean-img{
-    display: block;
+.buythebean_content{
     width: 50%;
-    height: 600px;
-    background-image: url("../img/home_buycoffeebean.png");
-    background-size: cover;
-    background-position: center 0;
-    background-repeat: no-repeat;
 }
 
 .buythebean_content{
@@ -109,7 +95,7 @@ span{
 }
 
 
-.buythebean_content P{
+.buythebean_content p{
     margin-bottom: 55px;
     padding: 0 70px;
     line-height: 2.5em;
@@ -122,16 +108,32 @@ span{
     text-decoration: none;
     color: white;
     width: 190px;
-    height: 50px;
     line-height: 50px;
     margin: 0 auto;
     font-size: 14px;
     font-weight: bold;
 }
 
-.learntobrew{
-    display: flex;
-    width: 100%;
+.buythebean-img{
+    background-image: url("../img/home_buycoffeebean.png");
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+}
+
+.learntobrew-img{
+    background-image: url("../img/home_howtobrew.png");
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+}
+
+.learntobrew_content{
+    width: 50%;
 }
 
 .learntobrew-img{
@@ -157,7 +159,7 @@ span{
 }
 
 
-.learntobrew_content P{
+.learntobrew_content p{
     margin-bottom: 55px;
     padding: 0 70px;
     line-height: 2.5em;
@@ -170,7 +172,6 @@ span{
     text-decoration: none;
     color: white;
     width: 190px;
-    height: 50px;
     line-height: 50px;
     margin: 0 auto;
     font-size: 14px;
@@ -182,3 +183,131 @@ iframe{
     width: 100%;
 }
 
+.hamBar{
+    display: block;
+}
+
+@media screen and (max-width: 414px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .top-slogan{
+        top: 110px;
+        left: 25px;
+    }
+
+    .visitourcafe-img{
+        height: 40vh;
+        display: none;
+    }
+
+    .visitourcafe_content{
+        height: 40vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        background-blend-mode: multiply;
+        background-image: url("../img/home_visitourcoffee.png");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .visitourcafe_content h2{
+        font-size: 18px;
+        margin: 40px auto 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .visitourcafe_content p{
+        font-size: 12px;
+        padding: 10px;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .visitourcafe_content a{
+        font-size: 12px;
+        width: 150px;
+        line-height: 30px;
+    }
+
+    .buythebean_content{
+        height: 40vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        background-blend-mode: multiply;
+        background-image: url("../img/home_buycoffeebean.png");
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+    .buythebean_content h2{
+        font-size: 18px;
+        margin: 40px auto 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .buythebean_content p{
+        font-size: 12px;
+        padding: 10px;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .buythebean-img{
+        height: 40vh;
+        display: none;
+    }
+
+    .buythebean_content a{
+        font-size: 12px;
+        width: 150px;
+        line-height: 30px;
+    }
+
+    .learntobrew-img{
+        height: 40vh;
+        display: none;
+    }
+
+    .learntobrew_content{
+        height: 40vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        background-blend-mode: multiply;
+        background-image: url("../img/howtobrew_top_bg.png");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    
+    .learntobrew_content h2{
+        font-size: 18px;
+        margin: 40px auto 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .learntobrew_content p{
+        font-size: 12px;
+        padding: 10px;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .learntobrew_content a{
+        font-size: 12px;
+        width: 150px;
+        line-height: 30px;
+    }
+
+
+
+}

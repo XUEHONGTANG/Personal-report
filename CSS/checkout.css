@@ -17,7 +17,7 @@ h1{
 
 .checkout_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 }
 
 .title h2{
@@ -118,4 +118,37 @@ th{
     border: none;
     margin-top: 50px;
     margin-left: 120px;
+}
+
+@media screen and (max-width: 415px) {
+    h1{
+        font-size: 32px;
+        }
+        
+    .checkout_main{
+        max-width: 414px;
+        outline: 1px solid red;
+    }
+
+    .checkout_top{
+        flex-direction: column;
+    }
+
+    th{
+        max-width: 410px;
+    }
+
+    .yourorder{
+        margin: 0 auto;
+    }
+
+    table{
+        margin: 0 auto;
+    }
+
+    .paymentmethod{
+        margin: auto;
+    }
+
+
 }

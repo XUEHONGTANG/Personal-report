@@ -17,7 +17,7 @@ h1{
 
 .contactus_main{
     width: 1200px;
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
 
 }
 
@@ -61,3 +61,17 @@ h1{
     border: none;
 }
 
+
+@media  screen and (max-width: 415px) {
+    h1{
+    font-size: 32px;
+    }
+    
+    .contactus_main{
+        max-width: 414px;
+    }
+
+    .name_email_wrapper input{
+        width: 180px;
+    }
+}
