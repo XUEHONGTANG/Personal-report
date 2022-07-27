@@ -73,6 +73,53 @@ input{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
+    }
+
+    .member_top_bg{
+        height: 20vh;
+    }
+
+    .member_main{
+        max-width: 414px;
+    }
+
+    thead tr th{
+        width: 100px;
+    }
+
+    table{
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .info_order_wrapper{
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .info_order_wrapper .personalinfo{
+        font-size: 20px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .info_order_wrapper .order{
+        font-size: 20px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    thead tr th{
+        font-size: 14px;
+    }
+
+    tbody tr th{
+        font-size: 12px;
+    }
+
+    input{
+        font-size: 12px;
+        width: 15vw;
     }
 }

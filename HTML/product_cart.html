@@ -61,27 +61,27 @@
                 <table>
                     <thead>
                         <tr>
-                            <th class="product-remove"></th>
                             <th class="product-thumbnail"></th>
                             <th class="product-name">Product</th>
                             <th class="product-price">Price</th>
                             <th class="product-quantity">Quantity</th>
                             <th class="product-total">Total</th>
+                            <th class="product-remove"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <td class="product-remove"><a href="#">x</a></td>
                         <td class="product-thumbnail"><a href="../HTML/productsingle.html"><img src="../img/DOLCEGUSTO.jpg" alt=""></a></td>
                         <td class="product-name"><a href="../HTML/productsingle.html">DOLCE GUSTO</a></td>
                         <td class="product-price">$ 15</td>
                         <td class="product-quantity">
                             <label class="screen-reader-text" for="quantity"></label>
                             <span class="icon_plus"><i class="fa-solid fa-plus"></i></span>
-                            <input type="text" id="quantity" class="input-text qty text eltdf-quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                            <input type="text" id="quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
                             <span class="icon_minus"><i class="fa-solid fa-minus"></i></span>
-                            </div>
+                        </div>
                         </td>
-                        <td class="product-total">$ 15</td>
+                    <td class="product-total">$ 15</td>
+                    <td class="product-remove"><a href="#">x</a></td>
                     </tbody>
                 </table>
 
@@ -103,7 +103,7 @@
                         </tr>
                     </thead>
                 </table>
-                <input type="button" value="PROCEED TO CHECKOUT" onclick="location.href = '../HTML/checkout.html'">
+                <input type="button" value="結帳" onclick="location.href = '../HTML/checkout.html'">
             </form>
         </div>
         

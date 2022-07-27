@@ -69,8 +69,12 @@ h1{
         max-width: 414px;
     }
 
+    .howtobrew_top_bg{
+        height: 20vh;
+    }
+
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .howtobrew_main p{

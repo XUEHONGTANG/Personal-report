@@ -48,7 +48,7 @@ h1{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .marfirst_collection_main{
@@ -57,5 +57,13 @@ h1{
 
     .collection_box .pic{
         padding-left: 60px;
+    }
+
+    .marfirst_collection_top_bg{
+        height: 20vh;
+    }
+
+    .collection_box p{
+        font-size: 14px;
     }
 }

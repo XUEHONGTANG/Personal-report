@@ -64,6 +64,31 @@ h1{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
+    }
+
+    .aboutus_top_bg{
+        height: 20vh;
+    }
+
+    .member_login_main{
+        max-width: 414px;
+    }
+
+    .account, .password, .login{
+        max-width: 300px;
+    }
+
+    .member_login_main input{
+        max-width: 300px;
+        padding: 0;
+    }
+
+    .content_wrapper{
+        width: 300px;
+    }
+
+    .member_login_main h2{
+        margin-bottom: 30px;
     }
 }

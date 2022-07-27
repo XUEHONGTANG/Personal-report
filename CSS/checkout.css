@@ -122,12 +122,21 @@ th{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
         }
+
+    .title h2{
+        font-size: 16px;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
         
     .checkout_main{
-        max-width: 414px;
-        outline: 1px solid red;
+        max-width: 300px;
+    }
+
+    .checkout_top_bg{
+        height: 20vh;
     }
 
     .checkout_top{
@@ -138,16 +147,56 @@ th{
         max-width: 410px;
     }
 
+    .name_wrapper{
+        justify-content: space-between;
+    }
+
+    .country_input, .city_input, .ZIPcode_input, .streetaddress_input, .phone_input, .emailaddress_input, .ordernote_input{
+        width: 292px;
+    }
+
+    .firstname, .lastname, .country, .city, .ZIPcode, .streetaddress, .phone, .emailaddress, .ordernote, .order_shipping{
+        font-size: 12px;
+    }
+
+    .first_name_input, .last_name_input{
+        width: 100px;
+    }
+
     .yourorder{
-        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        margin: 50px auto;
+    }
+
+    .order_suntotal, .order_shipping, .order_total, .order_title_total, .order_price{
+        font-size: 12px;
+    }
+
+    span{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .checkout_right span{
+        font-size: 14px;
+    }
+
+    .order_suntotal, .order_title_total{
+        font-size: 14px;
     }
 
     table{
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .paymentmethod{
         margin: auto;
+    }
+
+    .placeorder{
+        margin: 30px auto;
+        font-family: 'Noto Sans TC';
     }
 
 

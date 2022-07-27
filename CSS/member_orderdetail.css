@@ -160,7 +160,49 @@ input{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
+    }
+
+    .member_top_bg{
+        height: 20vh;
+    }
+
+    .member_main{
+        max-width: 414px;
+    }
+
+    .orderdetail_wrapper{
+        max-width: 414px;
+        margin: 50px auto;
+        padding: 0 30px;
+    }
+
+    .orderdetail_top{
+        flex-direction: column;
+    }
+
+    .orderdetail_bottom{
+        flex-direction: column;
+    }
+
+    .orderdetail_top_left{
+        margin-bottom: 20px;
+    }
+
+    .orderdetail_bottom_left{
+        margin-bottom: 20px;
+    }
+
+    tbody .product_remove, .product-thumbnail, .product-name, .product-price, .product-quantity, .product-total{
+        font-size: 12px;
+    }
+
+    .subtotal, .shipping, .total{
+        font-size: 12px;
+    }
+
+    .suntotal_price, .shipping_price, .total_price{
+        font-size: 12px;
     }
 }
 

@@ -68,15 +68,56 @@ h1{
 }
 
 @media screen and (max-width: 415px) {
+    .aboutus_top_bg{
+        height: 20vh;
+    }
+
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
     
     .aboutus_main{
         max-width: 413px;
     }
 
+    .aboutus_main h2{
+        font-size: 20px;
+    }
+
+    .aboutus_main p{
+        font-size: 14px;
+        padding: 0 56px;
+    }
+
+    .aboutus_img{
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .about_us_content{
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    .about_us_content_left{
+
+    }
+
+    .about_us_content_left img{
+        width: 100%;
+    }
+
+    .about_us_content_right{
+        margin-left: 20px;
+    }
+
     .about_us_content_right img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .about_us_content p{
+        font-size: 12px;
         padding: 0;
     }
 

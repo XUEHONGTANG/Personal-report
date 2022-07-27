@@ -107,7 +107,7 @@ li img{
 
 @media  screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
     
     .menu_title:before, .menu_title:after{
@@ -136,18 +136,29 @@ li img{
 
     .menu_content_left{
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 29px;
     }
 
     .menu_content_right{
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 29px;
     }
 
     .menu_bottom_content{
         flex-direction: column;
     }
 
+    .menu_top_bg{
+        height: 20vh;
+    }
+
+    .menu_title{
+        font-size: 20px;
+    }
+
+    .item_content_toptitle h5{
+        font-size: 20px;
+    }
 
 }
 

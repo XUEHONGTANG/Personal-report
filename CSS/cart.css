@@ -106,6 +106,7 @@ thead .carttotals_price{
     font-size: 32px;
     font-weight: bold;
     margin: 100px auto 30px;
+    text-align: center;
 }
 
 .bottom_tr{
@@ -138,6 +139,96 @@ table + input{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
+
+    .cart_top_bg{
+        height: 20vh;
+    }
+
+    .cart_main{
+        max-width: 414px;
+    }
+
+    .product-thumbnail{
+        display: none;
+    }
+
+    tbody .product-thumbnail{
+        display: none;
+    }
+
+    thead tr .product-name{
+        width: 90px;
+        font-size: 12px;
+    }
+
+    thead tr .product-price{
+        width: 90px;
+        font-size: 12px;
+    }
+
+    thead tr .product-quantity{
+        width: 90px;
+        font-size: 12px;
+    }
+
+    thead tr .product-total{
+        width: 90px;
+        font-size: 12px;
+    }
+
+    tbody .product-name{
+        font-size: 12px;
+    }
+
+    tbody .product-price{
+        font-size: 12px;
+    }
+
+    tbody .product-quantity{
+        font-size: 12px;
+    }
+
+    tbody .product-total{
+        font-size: 12px;
+    }
+
+    .carttotals{
+        font-size: 20px;
+        min-width: 414px;
+    }
+
+    thead .carttotals_suntotal{
+        width: 180px;
+        font-size: 12px;
+    }
+
+    thead .carttotals_price{
+        width: 180px;
+        font-size: 12px;
+    }
+
+    .carttotals_shipping{
+        font-size: 12px;
+    }
+
+    .carttotals_total{
+        font-size: 12px;
+    }
+
+    table{
+        margin: auto;
+    }
+
+    table + input{
+        margin: 20px 107px;
+        font-size: 12px;
+        font-family: 'Noto Sans TC';
+    }
+
+    #quantity-input{
+        width: 20px;
+    }
+
 }

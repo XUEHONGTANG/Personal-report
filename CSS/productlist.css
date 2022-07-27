@@ -92,7 +92,7 @@ h3{
 
 .selectionwrap{
     text-align: right;
-    margin-top: 30px;
+    margin: 30px 30px 0 0;
 }
 
 .product_seller_pic{
@@ -151,9 +151,13 @@ h3{
     font-size: 18px;
 }
 
+.addcart_rwd{
+    display: none;
+}
+
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .product_list_content{
@@ -164,4 +168,29 @@ h3{
     .product_seller{
         flex-direction: column;
     }
+
+    .product_list_top_bg{
+        height: 20vh;
+    }
+
+    .product_list_left{
+        margin: auto;
+    }
+
+    .addcart_rwd{
+        display: block;
+        line-height: 30px;
+        width: 30vw;
+        text-align: center;
+        font-size: 12px;
+        margin: 20px auto;
+    }
+
+    .addcart_rwd a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: #ecb788;
+    }
+
 }

@@ -50,6 +50,30 @@ h1{
 
 @media screen and (max-width: 415px) {
     h1{
-        font-size: 32px;
+        font-size: 26px;
+    }
+
+    .member_joinus_top_bg{
+        height: 20vh;
+    }
+
+    .member_joinus_main{
+        max-width: 414px;
+    }
+
+    .member_joinus_main h2{
+        max-width: 414px;
+        font-size: 20px;
+    }
+
+    .emailaddress, .password, .name, .phone, .birthdaydate, .address, .login{
+        width: 200px;
+        margin-left: 50px;
+        font-size: 12px;
+    }
+
+    .member_joinus_main input{
+        width: 300px;
+        margin: auto;
     }
 }

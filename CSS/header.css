@@ -8,7 +8,7 @@ body{
 .header{
     width: 100%;
     background-color: rgba(0,0,0,0.1);
-    height: 130px;
+    height: 110px;
     position: fixed;
     z-index: 2;
 }
@@ -27,7 +27,7 @@ body{
 
 .logo{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 img{
@@ -184,18 +184,23 @@ img{
 
     
     .nav{
-        display: none;
+        /* display: none; */
+        display: flex;
+
+        opacity: 0;
         margin: auto;
         position: absolute;
         top: 65px;
         width: 100%;
         background-color: #be9c79;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in;
     }
 
     .nav_show{
-        display: flex;
-        transition: max-height 0.1s ease-in;
-        
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+        pointer-events: auto;
     }
 
     .nav-ul{

@@ -187,7 +187,7 @@ iframe{
     display: block;
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 415px){
 
     h1{
         font-size: 30px;
