@@ -1,19 +1,31 @@
 @import url("reset.css");
 
-.home_top_bg{
-    width: 100%;
-    position: relative;
-}
-
-.home_top_bg img{
+.home_top_img{
     width: 100%;
     display: block;
+} 
+
+
+.swiper .swiper-button-next::after{
+    color: white;
+    font-size: 16px;
+}
+
+.swiper .swiper-button-prev::after{
+    color: white;
+    font-size: 16px;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: white;
 }
 
 .top-slogan{
     position: absolute;
-    top: 400px;
-    left: 100px;
+    top: 350px;
+    left: 200px;
+    z-index: 1;
 }
 
 h1{
@@ -194,8 +206,9 @@ iframe{
     }
 
     .top-slogan{
-        top: 110px;
+        top: 200px;
         left: 25px;
+        text-shadow: 2px 3px 5px #4d4d4d;
     }
 
     .visitourcafe-img{

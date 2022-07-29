@@ -10,7 +10,7 @@ body{
     background-color: rgba(0,0,0,0.1);
     height: 110px;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-wrapper{
@@ -122,18 +122,27 @@ img{
 
 .top-icon{
     display: flex;
-}
-
-.top-icon{
+    width: 125px;
     margin-left: 30px;
 }
 
-.top-icon a{
+.top-icon li{
+    width: 23px;
+}
+
+.top-icon li a{
     color: white;
+    height: 50px;
+    line-height: 50px;
 }
 
 .top-icon a:hover{
     color: tomato;
+}
+
+.top-icon .fa-solid{
+    width: 23.5px;
+    height: 21px;
 }
 
 .hamBar_wrapper{
