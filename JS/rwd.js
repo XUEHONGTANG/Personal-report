@@ -12,7 +12,7 @@ const nav = document.querySelector("section.nav");
 
 window.addEventListener("resize", function(){
     let swiper_slide_img = document.querySelectorAll("img.home_top_img");
-    if(window.innerWidth <= 414){
+    if(window.screen.width <= 414){
         swiper_slide_img[0].setAttribute("src", "../img/rwd1.jpg");
         swiper_slide_img[1].setAttribute("src", "../img/rwd2.jpg");
         swiper_slide_img[2].setAttribute("src", "../img/rwd3.jpg");
