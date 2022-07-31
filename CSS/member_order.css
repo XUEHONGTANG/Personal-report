@@ -20,9 +20,10 @@ h1{
     margin: 50px auto 100px;
 }
 
-.info_order_wrapper{
+.info_order_wrapper ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-weight: bold;
 }
 
@@ -36,6 +37,12 @@ h1{
     border: 0;
 }
 
+.info_order_wrapper .personalinfo a{
+    text-decoration: none;
+    color: white;
+    line-height: 150px;
+}
+
 .info_order_wrapper .order{
     background-color: #be9c79;
     color: white;
@@ -46,8 +53,14 @@ h1{
     border: 0;
 }
 
+.info_order_wrapper .order a{
+    text-decoration: none;
+    color: white;
+    line-height: 150px;
+}
+
 table{
-    width: 1000px;
+    width: 900px;
     margin: 60px auto 0;
 }
 
@@ -58,17 +71,21 @@ thead tr th{
 }
 
 tbody tr th{
+    width: 100px;
     height: 50px;
 }
 
-input{
+th a{
     width: 70px;
     height: 40px;
+    line-height: 40px;
     background-color: #be9c79;
     color: white;
-    border: none;
+    text-decoration: none;
     margin-top: 30px;
-    font-weight: bold;
+    font-family: 'Nunito', 'Noto Sans TC';
+    display: block;
+    text-align: center;
 }
 
 @media screen and (max-width: 415px) {
@@ -88,13 +105,16 @@ input{
         width: 100px;
     }
 
+    .account_content{
+        display: flex;
+    }
+
     table{
-        max-width: 350px;
-        margin: 20px auto;
+        max-width: 400px;
     }
 
     .info_order_wrapper{
-        max-width: 350px;
+        max-width: 300px;
         margin: auto;
     }
 
@@ -111,15 +131,16 @@ input{
     }
 
     thead tr th{
-        font-size: 14px;
+        font-size: 12px;
+        width: 60px;
     }
+
 
     tbody tr th{
         font-size: 12px;
+        width: 60px;
     }
 
-    input{
-        font-size: 12px;
-        width: 15vw;
-    }
+    
+
 }

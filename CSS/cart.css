@@ -127,6 +127,41 @@ tr .carttotals_price{
     text-align: left;
 }
 
+.bottom_tr .carttotals_price a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 20px auto 20px
+}
+
+.caculate_shipping{
+    display: none;
+}
+
+.caculate_shipping input{
+    width: 900px;
+    margin-bottom: 30px;
+    line-height: 50px;
+    font-family: 'Nunito', 'Noto Sans TC';
+}
+
+.update_total{
+    width: 200px;
+}
+
+.bottom_tr .carttotals_price .update_total > a{
+    width: 200px;
+    height: 60px;
+    background-color: #be9c79;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 0;
+}
+
 table + input{
     width: 200px;
     height: 60px;
@@ -135,6 +170,7 @@ table + input{
     border: none;
     margin-top: 30px;
     font-size: 14px;
+    font-family: 'Nunito', 'Noto Sans TC';
 }
 
 @media screen and (max-width: 415px) {

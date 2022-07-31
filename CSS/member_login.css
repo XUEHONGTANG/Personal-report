@@ -60,6 +60,7 @@ h1{
     color: white;
     border: none;
     margin-top: 30px;
+    font-family: 'Nunito', 'Noto Sans TC';
 }
 
 @media screen and (max-width: 415px) {

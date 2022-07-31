@@ -62,10 +62,10 @@
                     <thead>
                         <tr>
                             <th class="product-thumbnail"></th>
-                            <th class="product-name">Product</th>
-                            <th class="product-price">Price</th>
-                            <th class="product-quantity">Quantity</th>
-                            <th class="product-total">Total</th>
+                            <th class="product-name">商品</th>
+                            <th class="product-price">價錢</th>
+                            <th class="product-quantity">數量</th>
+                            <th class="product-total">總計</th>
                             <th class="product-remove"></th>
                         </tr>
                     </thead>
@@ -75,9 +75,9 @@
                         <td class="product-price">$ 15</td>
                         <td class="product-quantity">
                             <label class="screen-reader-text" for="quantity"></label>
-                            <span class="icon_plus"><i class="fa-solid fa-plus"></i></span>
-                            <input type="text" id="quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
                             <span class="icon_minus"><i class="fa-solid fa-minus"></i></span>
+                            <input type="text" id="quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                            <span class="icon_plus"><i class="fa-solid fa-plus"></i></span>
                         </div>
                         </td>
                     <td class="product-total">$ 15</td>
@@ -85,20 +85,29 @@
                     </tbody>
                 </table>
 
-                <div class="carttotals">CART TOTALS</div>
+                <div class="carttotals">總計</div>
 
                 <table>
                     <thead>
                         <tr class="bottom_tr">
-                            <th class="carttotals_suntotal">Subtotal</th>
+                            <th class="carttotals_suntotal">小計</th>
                             <th class="carttotals_price">$ 15</th>
                         </tr>
                         <tr class="bottom_tr">
-                            <th class="carttotals_shipping">Shipping</th>
-                            <th class="carttotals_price">Calculate shipping</th>
+                            <th class="carttotals_shipping">運費</th>
+                            <th class="carttotals_price">
+                                <a href="#">計算運費</a>
+                                <div class="caculate_shipping">
+                                    <input type="text" placeholder="國家"><br>
+                                    <input type="text" placeholder="城市"><br>
+                                    <input type="text" placeholder="郵遞區號">
+                                    <div class="update_total"><a href="#">更新金額</a></div>
+                                </div>
+                                
+                            </th>
                         </tr>
                         <tr class="bottom_tr">
-                            <th class="carttotals_total">Total</th>
+                            <th class="carttotals_total">總計</th>
                             <th class="carttotals_price">$ 45</th>
                         </tr>
                     </thead>

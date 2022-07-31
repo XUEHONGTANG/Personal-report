@@ -56,36 +56,41 @@
 
         <div class="member_main">
             <div class="info_order_wrapper">
-                <input type="button" class="personalinfo" value="Personal info" onclick="location.href='./member_personinfo.html'">
-                <input type="button" class="order" value="Order" onclick="location.href='./member_order.html'">
+                <ul>
+                    <li class="personalinfo"><a href="./member_personinfo.html">個人資料</a></li>
+                    <li class="order"><a href="./member_orderdetail.html">訂單</a></li>
+                </ul>
             </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Order number</th>
-                        <th>Order date</th>
-                        <th>Total</th>
-                        <th>Order status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>123456</th>
-                        <th>111/06/23</th>
-                        <th>$ 10</th>
-                        <th>Complete</th>
-                        <th><input type="button" value="Check" onclick="location.href='./member_orderdetail.html'"></th>
-                    </tr>
-                    <tr>
-                        <th>123456</th>
-                        <th>111/06/23</th>
-                        <th>$ 10</th>
-                        <th>Confirm</th>
-                        <th><input type="button" value="Check" onclick="location.href='./member_orderdetail.html'"></th>
-                    </tr>
-                </tbody>
-            </table>
+                <form action="#">
+                    <div class="account_content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>訂單號碼</th>
+                                <th>訂單日期</th>
+                                <th>總共</th>
+                                <th>訂單狀態</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>123456</th>
+                                <th>111/06/23</th>
+                                <th>$ 10</th>
+                                <th>完成</th>
+                                <th><a href="./member_orderdetail.html">查閱</a></th>
+                            </tr>
+                            <tr>
+                                <th>123456</th>
+                                <th>111/06/23</th>
+                                <th>$ 10</th>
+                                <th>確認中</th>
+                                <th><a href="./member_orderdetail.html">查閱</a></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </form>
         </div>
         
         <footer>

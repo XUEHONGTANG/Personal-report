@@ -73,6 +73,7 @@ h1{
     border: none;
     margin-left: 50px;
     font-size: 14px;
+    font-family: 'Nunito', 'Noto Sans TC';
 }
 
 .description_addinfo_wrapper ul{
@@ -110,7 +111,7 @@ h1{
 }
 
 .product_comment p{
-    font-size: 12px;
+    font-size: 16px;
     padding: 20px 20px;
 }
 
