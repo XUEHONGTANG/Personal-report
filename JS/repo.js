@@ -19,6 +19,16 @@ search_del.addEventListener("click", function(e){
         search.style.display = "block";
     }
 
+    let nav = document.querySelector("section.nav")
+    if(nav.classList.contains('nav_show')){
+        nav.classList.remove('nav_show');
+    }else{
+        nav.classList.add('nav_show');
+    }
+
+    let input_content = document.querySelector("input.input_content");
+    input_content.value = '';
+
 });
 
 let search_inner = document.querySelector("div.search_inner");
@@ -36,6 +46,9 @@ search_inner.addEventListener("click", function(){
     }else{
         nav.classList.add('nav_show');
     }
+
+    let input_content = document.querySelector("input.input_content");
+    input_content.value = '';
 });
 
 let search_content = document.querySelector("div.search_content");
