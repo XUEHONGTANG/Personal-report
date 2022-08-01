@@ -285,6 +285,10 @@ tr .carttotals_price{
         width: auto;
     }
 
+    .input_content_text{
+        width: auto;
+    }
+
     table + input{
         margin: 20px 107px;
         font-size: 12px;
