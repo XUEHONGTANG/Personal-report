@@ -20,6 +20,7 @@ h1{
     margin: 50px auto 100px;
 }
 
+
 table {
     table-layout: fixed;
     word-break: break-all;
@@ -135,11 +136,28 @@ tr .carttotals_price{
 }
 
 .caculate_shipping{
-    display: none;
+    height: 0;
+    visibility: hidden;
+    transition: height .6s ease-in;
 }
 
-.caculate_shipping input{
+.caculate_shipping_show{
+    height: 400px;
+    visibility: visible;
+    transition: height .6s ease-in;
+}
+
+.input_content{
     width: 900px;
+    height: 56px;
+    margin-bottom: 30px;
+    line-height: 50px;
+    font-family: 'Nunito', 'Noto Sans TC';
+    transition: height .8s ease-in;
+}
+
+.input_content_text{
+    width: 500px;
     margin-bottom: 30px;
     line-height: 50px;
     font-family: 'Nunito', 'Noto Sans TC';
@@ -162,7 +180,12 @@ tr .carttotals_price{
     margin-top: 0;
 }
 
-table + input{
+.checkout_wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.checkout_wrapper input{
     width: 200px;
     height: 60px;
     background-color: #be9c79;
@@ -171,6 +194,7 @@ table + input{
     margin-top: 30px;
     font-size: 14px;
     font-family: 'Nunito', 'Noto Sans TC';
+    float: right;
 }
 
 @media screen and (max-width: 415px) {
@@ -255,6 +279,10 @@ table + input{
 
     table{
         margin: auto;
+    }
+
+    .input_content{
+        width: auto;
     }
 
     table + input{

@@ -44,20 +44,30 @@
                                 <ul class="top-icon">
                                     <li><a href="./product_cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                                     <li><a href="./member_login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li><a class="search_btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                                 </ul>
                 </ul>         
             </section>
         </div>
     </nav>
 
+    <div class="search" style="display: none;">
+        <div class="search_inner">
+            <div class="search_content">
+                <form action="#" class="search_form">
+                    <input type="text" class="input_content" placeholder="Search">
+                    <a href="#" class="search_del"><i class="fa-solid fa-xmark"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+
         <div class="cart_top_bg">
             <h1>購物車</h1>
         </div>
 
         <div class="cart_main">
-            
-            <form>
+            <form action="#">
                 <table>
                     <thead>
                         <tr>
@@ -96,11 +106,11 @@
                         <tr class="bottom_tr">
                             <th class="carttotals_shipping">運費</th>
                             <th class="carttotals_price">
-                                <a href="#">計算運費</a>
+                                <a class="carttotals_price_btn" href="#">計算運費</a>
                                 <div class="caculate_shipping">
-                                    <input type="text" placeholder="國家"><br>
-                                    <input type="text" placeholder="城市"><br>
-                                    <input type="text" placeholder="郵遞區號">
+                                    <div class="input_content"><input class="input_content_text" type="text" placeholder="國家"></div><br>
+                                    <div class="input_content"><input class="input_content_text" type="text" placeholder="城市"></div><br>
+                                    <div class="input_content"><input class="input_content_text" type="text" placeholder="郵遞區號"></div>
                                     <div class="update_total"><a href="#">更新金額</a></div>
                                 </div>
                                 
@@ -112,9 +122,13 @@
                         </tr>
                     </thead>
                 </table>
-                <input type="button" value="結帳" onclick="location.href = '../HTML/checkout.html'">
+                <div class="checkout_wrapper">
+                    <input type="button" value="結帳" onclick="location.href = '../HTML/checkout.html'">
+                </div>
+                
             </form>
         </div>
+
         
         
     
@@ -141,6 +155,18 @@
             </div>
         </footer>
         <p class="comment">本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://docs.google.com/document/d/1v2weE6RTR94Qu7Lg0DD4Q6bRCIexN1PdJ78rURYTiN4/edit" target="_blank">參考資源</a></p>
-        <script src="../JS/rwd.js"></script>
+        <script src="../JS/repo.js"></script>
+
+        <script>
+            const caculate_shipping_btn = document.querySelector('a.carttotals_price_btn');
+            caculate_shipping_btn.addEventListener('click', function(e){
+                e.preventDefault();
+                const caculate_shipping = document.querySelector('.caculate_shipping');
+                caculate_shipping.classList.toggle('caculate_shipping_show');
+
+            })
+        
+        
+        </script>
 </body>
 </html>
