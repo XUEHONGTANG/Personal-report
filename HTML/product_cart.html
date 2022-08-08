@@ -87,7 +87,7 @@
                         <td class="product-quantity">
                             <label class="screen-reader-text" for="quantity"></label>
                             <span class="icon_minus"><i class="fa-solid fa-minus"></i></span>
-                            <input type="text" id="quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                            <input type="text" id="quantity-input" name="quantity" value="1" title="Qty" size="1">
                             <span class="icon_plus"><i class="fa-solid fa-plus"></i></span>
                         </div>
                         </td>
@@ -171,9 +171,10 @@
         
 
             
-        let  btn1 = document.getElementsByClassName('btn1')[0];
-        btn1.addEventListener('click', function(e){
-        let input_num = document.getElementById('input_num')
+        let icon_minus = document.querySelector("span.icon_minus")
+        icon_minus.addEventListener('click', function(){
+
+        let input_num = document.querySelector('#quantity-input')
         // console.log(input_num);
         let one = 1
         let count =  input_num.value
@@ -188,7 +189,23 @@
             input_num.value = 0
         }
     });
-        // console.log(input_num.value);
+
+    let icon_plus = document.querySelector("span.icon_plus")
+        icon_plus.addEventListener('click', function(){
+
+        let input_num = document.querySelector('#quantity-input')
+        // console.log(input_num);
+        let one = parseInt(1)
+        let count =  input_num.value
+        count = count + one
+
+        console.log(count);
+        
+        input_num.value = count
+        console.log(typeof(count));
+        
+    });
+
 
 
         </script>
