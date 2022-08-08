@@ -161,13 +161,14 @@
         <script src="../JS/jquery-ui.js"></script>
 
         <script>
-            $('a.carttotals_price_btn').click(function(){
-                $('.caculate_shipping').slideToggle(1000)
-            })
+            $(document).ready(function(){
+                $('a.carttotals_price_btn').click(function(){
+                    $('.caculate_shipping').slideToggle(1000)
+                })
+            });
         
         
 
-            
             
         let  btn1 = document.getElementsByClassName('btn1')[0];
         btn1.addEventListener('click', function(e){
