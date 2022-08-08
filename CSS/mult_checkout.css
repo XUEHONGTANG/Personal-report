@@ -134,7 +134,7 @@ table {
     table-layout: fixed;
 } 
 
-thead tr .product-name{
+thead tr th.product-name{
     width: 300px;
     height: 50px;
 }
@@ -196,6 +196,25 @@ tbody .product-price{
 tbody .product-quantity{
     vertical-align: middle;
     text-align: center;
+}
+
+#quantity-input{
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+table.cart > tfoot.cart_empty > tr{
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    height: 100px;
+    
+}
+
+table.cart > tfoot.cart_empty > tr > td{
+    width: 300px;
+    vertical-align: middle;
+    
 }
 
 tbody .product-total{
@@ -461,7 +480,7 @@ h2, .order_complete_main i, p{
         display: none;
     }
 
-    thead tr .product-name{
+    thead tr th.product-name{
         width: 90px;
         font-size: 12px;
     }
@@ -499,6 +518,12 @@ h2, .order_complete_main i, p{
 
     #quantity-input{
         width: 20px;
+        text-align: center;
+    }
+
+    table.cart > tfoot.cart_empty > tr > td{
+        width: 104px;
+        font-size: 12px;
     }
 
     .carttotals{
@@ -620,7 +645,6 @@ h2, .order_complete_main i, p{
 
     span{
         font-size: 12px;
-        margin-left: 10px;
     }
 
     .checkout_right span{

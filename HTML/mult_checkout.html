@@ -80,7 +80,7 @@
             <!-- fieldsets -->
         <fieldset>
 
-            <table>
+            <table class="cart">
                 <thead>
                     <tr>
                         <th class="product-thumbnail"></th>
@@ -91,7 +91,7 @@
                         <th class="product-remove"></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="cart_content">
                     <td class="product-thumbnail"><a href="../HTML/productsingle.html"><img src="../img/DOLCEGUSTO.jpg" alt=""></a></td>
                     <td class="product-name"><a href="../HTML/productsingle.html">DOLCE GUSTO</a></td>
                     <td class="product-price">$ 15</td>
@@ -102,8 +102,9 @@
                     </div>
                     </td>
                 <td class="product-total">$ 15</td>
-                <td class="product-remove"><a>x</a></td>
+                <td class="product-remove"><a class="remove"><i class="fa-solid fa-xmark"></i></a></td>
                 </tbody>
+                <tfoot class="cart_empty"></tfoot>
             </table>
 
             <div class="carttotals">總計</div>
@@ -254,8 +255,8 @@
                     
                     $('.progressBar li').eq($('fieldset').index(nextFieldset)).addClass('active');
                     
-                    currentFieldset.css({'display': 'none'});
-                    nextFieldset.css({'display': 'block'});
+                    currentFieldset.css({display: 'none'});
+                    nextFieldset.css({display: 'block'});
                 })
     
                 $('.previous').click(function() {
@@ -264,8 +265,8 @@
                     
                     $('.progressBar li').eq($('fieldset').index(currentFieldset)).removeClass('active');
                     
-                    currentFieldset.css({'display': 'none'});
-                    prevFieldset.css({'display': 'block'});
+                    currentFieldset.css({display: 'none'});
+                    prevFieldset.css({display: 'block'});
                 })
     
                 $('a.carttotals_price_btn').click(function(){
@@ -274,6 +275,11 @@
 
                 $('.shiptodifferent').click(function(){
                     $('.checkout_right').slideToggle(1000);
+                })
+
+                $('a.remove').click(function(){
+                    $('tbody.cart_content').css('display','none')
+                    $('tfoot.cart_empty').html(`<tr><td>您的購物車是空的</td></tr>`)
                 })
 
             })
