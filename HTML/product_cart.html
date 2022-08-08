@@ -27,7 +27,7 @@
                         <ul>
                             <li><a href="./productlist.html">咖啡用品</a></li>
                             <li><a href="./productsingle.html">商品頁面</a></li>
-                            <li><a href="./product_cart.html">購物車</a></li>
+                            <li><a href="./mult_checkout.html">購物車</a></li>
                         </ul>
                         </div>
                     </li>
@@ -42,7 +42,7 @@
                     <li class="nav-item"><a href="./aboutus.html">關於我們</a></li>
                     <li class="nav-item"><a href="./contactus.html">連絡我們</a></li>
                                 <ul class="top-icon">
-                                    <li><a href="./product_cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                    <li><a href="./mult_checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                                     <li><a href="./member_login.html"><i class="fa-solid fa-circle-user"></i></a></li>
                                     <li><a class="search_btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                                 </ul>
@@ -105,8 +105,9 @@
                         </tr>
                         <tr class="bottom_tr">
                             <th class="carttotals_shipping">運費</th>
-                            <th class="carttotals_price">
-                                <a class="carttotals_price_btn" href="#">計算運費</a>
+                            <td class="carttotals_price">
+                                
+                                <a class="carttotals_price_btn">計算運費</a>
                                 <div class="caculate_shipping">
                                     <div class="input_content"><input class="input_content_text" type="text" placeholder="國家"></div><br>
                                     <div class="input_content"><input class="input_content_text" type="text" placeholder="城市"></div><br>
@@ -114,7 +115,7 @@
                                     <div class="update_total"><a href="#">更新金額</a></div>
                                 </div>
                                 
-                            </th>
+                            </td>
                         </tr>
                         <tr class="bottom_tr">
                             <th class="carttotals_total">總計</th>
@@ -156,17 +157,38 @@
         </footer>
         <p class="comment">本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://docs.google.com/document/d/1v2weE6RTR94Qu7Lg0DD4Q6bRCIexN1PdJ78rURYTiN4/edit" target="_blank">參考資源</a></p>
         <script src="../JS/repo.js"></script>
+        <script src="../JS/jquery-3.6.0.js"></script>
+        <script src="../JS/jquery-ui.js"></script>
 
         <script>
-            const caculate_shipping_btn = document.querySelector('a.carttotals_price_btn');
-            caculate_shipping_btn.addEventListener('click', function(e){
-                e.preventDefault();
-                const caculate_shipping = document.querySelector('.caculate_shipping');
-                caculate_shipping.classList.toggle('caculate_shipping_show');
-
+            $('a.carttotals_price_btn').click(function(){
+                $('.caculate_shipping').slideToggle(1000)
             })
         
         
+
+            
+            
+        let  btn1 = document.getElementsByClassName('btn1')[0];
+        btn1.addEventListener('click', function(e){
+        let input_num = document.getElementById('input_num')
+        // console.log(input_num);
+        let one = 1
+        let count =  input_num.value
+        count = count -  one
+
+        // console.log(count);
+        
+        input_num.value = count
+        console.log(typeof(count));
+        
+        if( input_num.value < 1){
+            input_num.value = 0
+        }
+    });
+        // console.log(input_num.value);
+
+
         </script>
 </body>
 </html>

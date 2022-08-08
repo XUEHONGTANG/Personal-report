@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHECK OUT</title>
-    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="../CSS/mult_checkout.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>checkout</title>
 </head>
 <body>
     <nav class="header">
@@ -62,15 +63,79 @@
         </div>
     </div>
 
-        <div class="checkout_top_bg">
-            <h1>結帳</h1>
+        <div class="cart_top_bg">
+            <h1>購物車</h1>
         </div>
 
-        <div class="checkout_main">
-            <div class="title">
-                <h2>結帳明細</h2>
-            </div>
 
+
+    <div class="form">
+        <ul class='progressBar'>
+            <li class='active'><p class='progressBar_text'>購物車</p></li>
+            <li><p class='progressBar_text'>填寫資料</p></li>
+            <li><p class='progressBar_text'>訂單完成</p></li>
+        </ul>
+            
+            <!-- fieldsets -->
+        <fieldset>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="product-thumbnail"></th>
+                        <th class="product-name">商品</th>
+                        <th class="product-price">價錢</th>
+                        <th class="product-quantity">數量</th>
+                        <th class="product-total">總計</th>
+                        <th class="product-remove"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td class="product-thumbnail"><a href="../HTML/productsingle.html"><img src="../img/DOLCEGUSTO.jpg" alt=""></a></td>
+                    <td class="product-name"><a href="../HTML/productsingle.html">DOLCE GUSTO</a></td>
+                    <td class="product-price">$ 15</td>
+                    <td class="product-quantity">
+                        <span class="icon_minus"><i class="fa-solid fa-minus"></i></span>
+                        <input type="text" id="quantity-input" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                        <span class="icon_plus"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    </td>
+                <td class="product-total">$ 15</td>
+                <td class="product-remove"><a>x</a></td>
+                </tbody>
+            </table>
+
+            <div class="carttotals">總計</div>
+
+            <table>
+                <tbody>
+                    <tr class="bottom_tr">
+                        <th class="carttotals_suntotal">小計</th>
+                        <th class="carttotals_price">$ 15</th>
+                    </tr>
+                    <tr class="bottom_tr">
+                        <th class="carttotals_shipping">運費</th>
+                        <th class="carttotals_price">
+                            
+                            <a class="carttotals_price_btn">計算運費</a>
+                            <div class="caculate_shipping">
+                                <input class="input_content_text" type="text" placeholder="國家"><br>
+                                <input class="input_content_text" type="text" placeholder="城市"><br>
+                                <input class="input_content_text" type="text" placeholder="郵遞區號">
+                                <div class="update_total"><a href="#">更新金額</a></div>
+                            </div>
+                            
+                        </th>
+                    </tr>
+                    <tr class="bottom_tr">
+                        <th class="carttotals_total">總計</th>
+                        <th class="carttotals_price">$ 45</th>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" name="next" class="next action-button" value="下一步" />
+        </fieldset>
+        <fieldset>
             <div class="checkout_top">
                 <div class="checkout_left">
                     <div class="name_wrapper">
@@ -103,7 +168,6 @@
 
             <div class="checkout_bottom">
                 <div class="yourorder">您的訂單</div>
-
                 <table>
                     <thead>
                         <tr class="bottom_tr">
@@ -131,13 +195,21 @@
                 <input type="radio" name="1" class="paymentmethod"><span>Bank transfer</span><br>
                 <input type="radio" name="1" class="paymentmethod"><span>Cash on delivery</span><br>
                 <input type="radio" name="1" class="paymentmethod"><span>VISA / MASTERCARD</span>
-                <input type="button" class="placeorder" value="送出訂單" onclick="location.href='./order_complete.html'">
+            </div>
+
+            <input type="button" name="previous" class="previous action-button" value="上一步" />
+            <input type="button" name="next" class="next action-button" value="送出" />
+        </fieldset>
+        <fieldset>
+            <div class="order_complete_main">
+                <div class="order_content">
+                <h2>訂單完成</h2>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>您可至會員中心查閱訂單資訊</p>
             </div>
         </div>
-
-
-        
-    
+        </fieldset>
+        </div>
 
         <footer>
             <div class="footer_content"> 
@@ -161,6 +233,42 @@
             </div>
         </footer>
         <p class="comment">本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。<a href="https://docs.google.com/document/d/1v2weE6RTR94Qu7Lg0DD4Q6bRCIexN1PdJ78rURYTiN4/edit" target="_blank">參考資源</a></p>
-        <script src="../JS/repo.js"></script>
+
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        
+        <script>
+            const progressbar = $('.progressBar');
+            const fieldsets = $('fieldset');
+
+            $('.next').click(function() {
+                const currentFieldset = $(this).parent();
+                const nextFieldset = $(this).parent().next();
+                
+                $('.progressBar li').eq($('fieldset').index(nextFieldset)).addClass('active');
+                
+                currentFieldset.css({'display': 'none'});
+                nextFieldset.css({'display': 'block'});
+            })
+
+            $('.previous').click(function() {
+                const currentFieldset = $(this).parent();
+                const prevFieldset = $(this).parent().prev();
+                
+                $('.progressBar li').eq($('fieldset').index(currentFieldset)).removeClass('active');
+                
+                currentFieldset.css({'display': 'none'});
+                prevFieldset.css({'display': 'block'});
+            })
+
+            $('a.carttotals_price_btn').click(function(){
+                $('.caculate_shipping').slideToggle(1000)
+            })
+        
+        
+        
+        </script>
 </body>
 </html>

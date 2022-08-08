@@ -132,24 +132,19 @@ tr .carttotals_price{
     text-decoration: none;
     color: black;
     display: block;
-    margin: 20px auto 20px
+    margin: 35px auto;
+}
+
+.carttotals_price_btn{
+    cursor: pointer;
 }
 
 .caculate_shipping{
-    height: 0;
-    visibility: hidden;
-    transition: height .6s ease-in;
-}
-
-.caculate_shipping_show{
-    height: 400px;
-    visibility: visible;
-    transition: height .6s ease-in;
+    display: none;
 }
 
 .input_content{
     width: 900px;
-    height: 56px;
     margin-bottom: 30px;
     line-height: 50px;
     font-family: 'Nunito', 'Noto Sans TC';

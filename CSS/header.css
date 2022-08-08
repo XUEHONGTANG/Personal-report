@@ -15,6 +15,7 @@ body{
 
 .header-wrapper{
     max-width: 1440px;
+    height: 110px;
     margin: 0 auto;
     display: flex;
 }
@@ -22,7 +23,6 @@ body{
 .logo-a{
     display: block;
     width: 90px;
-    margin-left: 50px;
 }
 
 .logo{
@@ -55,7 +55,7 @@ img{
 }
 
 .nav-item{
-    width: 90px;
+    width: 110px;
     position: relative;
 }
 
@@ -72,6 +72,16 @@ img{
 
 .nav-item:hover.nav-item::after{
     width: 100%;
+}
+
+.fa-angle-down{
+    margin-left: 5px;
+    transition: transform .4s ease-in;
+}
+
+.nav-item:hover .fa-angle-down{
+    transform: rotate(180deg);
+    transition: transform .4s ease-in;
 }
 
 .nav a{
@@ -224,6 +234,7 @@ img{
 
     .logo{
         margin-top: 10px;
+        margin-left: 20px;
     }
 
     .hamBar_wrapper{
@@ -266,6 +277,10 @@ img{
         font-size: 15px;
     }
 
+    .drop_down{
+        padding-left: 15px;
+    }
+
     .top-icon{
         margin: auto;
     }
@@ -277,19 +292,21 @@ img{
         max-width: 414px;
         width: 414px;
         margin: 0;
+        text-align: center;
     }
 
     .second_nav ul li{
         width: 100%;
-        background-color: #666666;
     }
 
     .second_nav ul li a{
-        width: 200px;
-        margin: 0;
         line-height: 50px;
         font-size: 12px;
-        padding-left: 13px;
+        text-align: center;
+    }
+
+    .nav-item{
+        width: 100%;
     }
 
     .nav-item::after{
