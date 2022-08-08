@@ -176,6 +176,10 @@ img{
     height: 110px;
 }
 
+.search_del{
+    color: #666666;
+}
+
 .search_inner{
     z-index: 4;
     position: fixed;
@@ -286,7 +290,6 @@ img{
 
     .second_nav{
         position: static;
-        display: none;
         flex-direction: column;
         max-width: 414px;
         width: 414px;

@@ -29,6 +29,13 @@ search_del.addEventListener("click", function(e){
     let input_content = document.querySelector("input.input_content");
     input_content.value = '';
 
+    const sideInner = document.querySelector(".sideInner");
+    if(sideInner.style.display === 'none'){
+        sideInner.style.display = 'block'
+    }else{
+        sideInner.style.display = 'none'
+    }
+
 });
 
 let search_inner = document.querySelector("div.search_inner");
@@ -49,6 +56,13 @@ search_inner.addEventListener("click", function(){
 
     let input_content = document.querySelector("input.input_content");
     input_content.value = '';
+
+    const sideInner = document.querySelector(".sideInner");
+    if(sideInner.style.display === 'none'){
+        sideInner.style.display = 'block'
+    }else{
+        sideInner.style.display = 'none'
+    }
 });
 
 let search_content = document.querySelector("div.search_content");
@@ -91,13 +105,12 @@ drop_down1.addEventListener("click", function(){
     const second_nav_1 = document.querySelectorAll(".second_nav")[0]
     const angleDown = document.querySelectorAll("i.fa-angle-down")[0]
 
-    if(second_nav_1.style.display == 'none'){
+    if(second_nav_1.style.display === 'none'){
         second_nav_1.style.display = 'block';
         angleDown.style.transform = 'rotate(180deg)';
     }else{
         second_nav_1.style.display = 'none';
         angleDown.style.transform = 'rotate(0deg)';
-        sideInner.style.display = 'none';
     }
 })
 
@@ -105,7 +118,7 @@ drop_down2.addEventListener("click", function(){
     const second_nav_2 = document.querySelectorAll(".second_nav")[1]
     const angleDown = document.querySelectorAll("i.fa-angle-down")[1]
 
-    if(second_nav_2.style.display == 'none'){
+    if(second_nav_2.style.display === 'none'){
         second_nav_2.style.display = 'block'
         angleDown.style.transform = 'rotate(180deg)'
     }else{
