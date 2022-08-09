@@ -79,10 +79,6 @@ img{
     transition: transform .4s ease-in;
 }
 
-.nav-item:hover .fa-angle-down{
-    transform: rotate(180deg);
-    transition: transform .4s ease-in;
-}
 
 .nav a{
     display: block;
